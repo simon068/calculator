@@ -165,9 +165,9 @@ html {
 
 .calculator__keys>*:active::before,
 .calculator__keys>.is-depressed::before {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
   bottom: 0;
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 0 0 6px 0 rgb(0, 0, 0.5) inset;
   content: "";
   left: 0;
   opacity: 0.3;
@@ -182,7 +182,7 @@ html {
 }
 
 .key--equal {
-  background-image: linear-gradient(to bottom, #ff82b2, #ff3075);
+  background-image: linear-gradient(to bottom, #ffb7cf, #ff0055);
   grid-column: -2;
   grid-row: 2 / span 4;
 }
@@ -196,4 +196,21 @@ footer {
   padding: 10px 0;
   font-size: 14px;
   color: #333;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    overflow: hidden;
+  }
+
+  .calculator {
+    position: relative;
+    max-width: auto;
+    max-height: auto;
+    top:-2rem;
+  }
+
+  footer {
+    padding: 5px 0;
+  }
 }
